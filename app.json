@@ -2,6 +2,12 @@
   "expo": {
     "name": "ProductExplorer",
     "slug": "ProductExplorer",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "android": {
+      "package": "com.anonymous.ProductExplorer"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.ProductExplorer"
+    }
   }
 }
