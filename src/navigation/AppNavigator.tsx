@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import type { RootStackParamList } from '@/types';
 import { ProductListScreen, ProductDetailScreen } from '@/screens';
-import { COLORS, FONT_SIZE, SPACING } from '@/constants';
+import { COLORS, FONT_SIZE } from '@/constants';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -24,7 +24,7 @@ export function AppNavigator() {
           name="ProductList"
           component={ProductListScreen}
           options={{
-            title: 'Product Explorer', 
+            title: 'Product Explorer',
           }}
         />
         <Stack.Screen
@@ -45,9 +45,5 @@ const styles = StyleSheet.create({
     fontSize: FONT_SIZE.lg,
     fontWeight: '700',
     color: COLORS.text,
-  },
-  headerLogo: {
-    fontSize: FONT_SIZE.xl,
-    marginRight: SPACING.xs,
   },
 });
