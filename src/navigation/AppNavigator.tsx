@@ -24,10 +24,7 @@ export function AppNavigator() {
           name="ProductList"
           component={ProductListScreen}
           options={{
-            title: 'Product Explorer',
-            headerRight: () => (
-              <Text style={styles.headerLogo}>🛍️</Text>
-            ),
+            title: 'Product Explorer', 
           }}
         />
         <Stack.Screen
